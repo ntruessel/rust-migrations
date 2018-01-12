@@ -1,0 +1,16 @@
+[package]
+name = "migrations"
+version = "0.1.0"
+authors = ["Nicolas Truessel <ntruessel@njsm.de>"]
+publish = false
+
+[lib]
+name = "migrations"
+path = "src/lib.rs"
+
+[dependencies]
+diesel = { version = "^1.0.0", features = ["postgres"] }
+diesel_derives = { version = "^1.0.0", features = ["postgres"] }
+error-chain = "^0.11.0"
+openssl = "^0.10.2"
+regex = "^0.2.5"
